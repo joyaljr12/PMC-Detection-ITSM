@@ -1,5 +1,5 @@
 # PMC-Detection-ITSM
-# PMC-Detection-Master-Thesis-Pipeline
+
 
 # 🚗 AI‑Powered PMC Detection Pipeline
 **Master Thesis – CARIAD / Volkswagen Group**
