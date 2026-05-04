@@ -29,39 +29,38 @@ data cleaning → error message extraction → embeddings → clustering → PMC
 ## 📁 Project Structure
 
 ```
-+-- config/
-|   +-- config.yaml                  # Safe configuration (no API keys)
-|
-+-- prompts/
-|   +-- pmc_prompt.txt               # Prompt template for summarisation
-|
-+-- src/
-|   +-- clustering/
-|   |   +-- clusterer.py             # DBSCAN clustering
-|   |
-|   +-- embeddings/
-|   |   +-- text_embeddings.py       # SBERT embeddings
-|   |
-|   +-- pmc/
-|   |   +-- pmc_creation.py          # PMC candidate logic
-|   |   +-- pmc_payload_builder.py   # PMC JSON payload generator
-|   |   +-- pmc_summarizer.py        # LLM-driven summarisation
-|   |
-|   +-- preprocessing/
-|   |   +-- cleaning.py              # Column drop, NA handling, date unification
-|   |   +-- error_extraction.py      # A#3 extraction + fallback error logic
-|   |   +-- llm_description_cleaner.py
-|   |
-|   +-- translation/
-|       +-- translator.py            # Optional translation module
-|
-+-- main.py                          # Runs full pipeline end-to-end
-+-- pipeline.py                      # Pipeline controller / orchestrator
-+-- preprocess_pipeline.py           # Preprocessing-only pipeline
-+-- run_summarisation_only.py        # Summarise PMCs without recomputing embeddings
-+-- requirements.txt                 # List of Python dependencies
-+-- README.md                        # Project documentation
-
+├── config/
+│   └── config.yaml                  # Safe configuration (no API keys)
+│
+├── prompts/
+│   └── pmc_prompt.txt               # Prompt template for summarisation
+│
+├── src/
+│   ├── clustering/
+│   │   └── clusterer.py             # DBSCAN clustering
+│   │
+│   ├── embeddings/
+│   │   └── text_embeddings.py       # SBERT embeddings
+│   │
+│   ├── pmc/
+│   │   ├── pmc_creation.py          # PMC candidate logic
+│   │   ├── pmc_payload_builder.py   # PMC JSON payload generator
+│   │   └── pmc_summarizer.py        # LLM-driven summarisation
+│   │
+│   ├── preprocessing/
+│   │   ├── cleaning.py              # Column drop, NA handling, date unification
+│   │   ├── error_extraction.py      # A#3 extraction + fallback error logic
+│   │   └── llm_description_cleaner.py
+│   │
+│   └── translation/
+│       └── translator.py            # Optional translation module
+│
+├── main.py                          # Runs full pipeline end-to-end
+├── pipeline.py                      # Pipeline controller / orchestrator
+├── preprocess_pipeline.py           # Preprocessing-only pipeline
+├── run_summarisation_only.py        # Summarise PMCs without recomputing embeddings
+├── requirements.txt                 # List of Python dependencies
+└── README.md                        # Project documentation
 ```
 
 
