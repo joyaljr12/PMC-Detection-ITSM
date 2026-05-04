@@ -32,6 +32,7 @@ data cleaning → error message extraction → embeddings → clustering → PMC
 .
 ├── config/
 │   └── config.yaml                 # Safe configuration (no API keys)
+...
 │
 ├── prompts/
 │   └── pmc_prompt.txt              # Prompt template for summarisation
@@ -126,7 +127,7 @@ venv\Scripts\activate
 
 2. Install required packages
 pip install -r requirements.txt
-``
+
 3. Prepare your dataset
 Place your Excel dataset in the project root (next to main.py),
 and update this line in config.yaml:
