@@ -1,4 +1,4 @@
-# PMC-Detection-ITSM
+# Problem Management Candidate (PMC)-Detection-ITSM
 
 
 # 🚗 AI‑Powered PMC Detection Pipeline
