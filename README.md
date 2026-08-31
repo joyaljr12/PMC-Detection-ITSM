@@ -1,6 +1,9 @@
 # Problem Management Candidate (PMC)-Detection-ITSM
 
 
+> **Note:** This repository is a sanitized portfolio version of an industry master’s-thesis project completed at CARIAD / Volkswagen Group. Original datasets, credentials, confidential configuration, internal endpoints, and active GenAI API integrations have been removed for confidentiality and security reasons. The repository is intended to demonstrate the pipeline architecture, processing logic, modular design, and engineering approach.
+
+
 # 🚗 AI‑Powered PMC Detection Pipeline
 **Master Thesis – CARIAD / Volkswagen Group**
 
