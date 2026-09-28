@@ -83,6 +83,56 @@ Structured JSON Payload
 LLM-Based PMC Summary
 
 
+
+Later you can make this prettier with Mermaid, but even this version already helps.
+
+## Very important: show your experimentation
+
+At the moment, someone looking at your repository might assume:
+
+> “He used MiniLM + DBSCAN.”
+
+That hides a large part of what you actually did.
+
+Add:
+
+```markdown
+## Experimentation & Model Selection
+
+The thesis did not begin with a fixed embedding or clustering approach.
+Multiple text representations and density-based clustering methods were evaluated
+before selecting the configuration used in the portfolio implementation.
+
+| Component | Approaches evaluated |
+|---|---|
+| Text representation | TF-IDF, Word2Vec, Sentence-BERT MiniLM, Sentence-BERT MPNet |
+| Clustering | DBSCAN, HDBSCAN |
+| Evaluation | Quantitative clustering metrics and manual cluster review |
+| GenAI summarisation | Four GPT models |
+| Selected LLM | GPT-4.1-mini |
+
+Model selection was based not only on quantitative performance but also on
+whether the resulting clusters were semantically meaningful and useful within
+the Problem Management workflow.
+
+The public implementation focuses on the selected pipeline configuration rather
+than reproducing every experiment performed during the thesis.
+
+## PMC Candidate Logic
+
+Clustering alone was not treated as sufficient evidence that incidents belonged
+to the same recurring problem.
+
+The final PMC logic combines semantic similarity with organisation-specific
+conditions including:
+
+- matching category and function
+- matching vehicle software generation
+- a minimum of five related incidents
+- recurrence within a 21-day window
+
+This separates semantic grouping from the business rules used to determine
+whether a cluster should become a Problem Management Candidate.
 ```
 ## 📁 Project Structure 
 
