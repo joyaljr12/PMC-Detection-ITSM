@@ -1,4 +1,37 @@
-# Problem Management Candidate (PMC)-Detection-ITSM
+# AI-Powered Problem Management Candidate Detection for ITSM
+
+
+> **Portfolio notice**
+>
+> This repository is a sanitized portfolio version of an industry master's thesis
+> project completed at CARIAD / Volkswagen Group.
+>
+> Original datasets, credentials, confidential configuration, internal endpoints,
+> and active company API integrations have been removed for confidentiality and
+> security reasons.
+>
+> The repository is intended to demonstrate the pipeline architecture, processing
+> logic, modular design, experimentation approach, and selected implementation.
+
+## Overview
+
+This project implements the core workflow of an AI-assisted
+**Problem Management Candidate (PMC) detection pipeline** developed during my
+master's thesis.
+
+The system processes IT Service Management incident data to identify groups of
+recurring technical incidents and generate structured Problem Management
+Candidates for further review.
+
+The pipeline follows the workflow:
+
+**Incident data → preprocessing → error-message extraction → semantic embeddings
+→ clustering → PMC business rules → structured JSON payloads → GenAI-based
+summarisation**
+
+The public repository contains a sanitized implementation of the core processing
+pipeline. Company-specific datasets, credentials, endpoints, and active internal
+API integrations are intentionally excluded.
 
 
 > **Note:** This repository is a sanitized portfolio version of an industry master’s-thesis project completed at CARIAD / Volkswagen Group. Original datasets, credentials, confidential configuration, internal endpoints, and active GenAI API integrations have been removed for confidentiality and security reasons. The repository is intended to demonstrate the pipeline architecture, processing logic, modular design, and engineering approach.
@@ -12,22 +45,20 @@ This repository contains the full implementation of an **AI-driven PMC (Problem 
 It is the end‑to‑end solution developed as part of my **Master Thesis**, combining:  
 data cleaning → error message extraction → embeddings → clustering → PMC creation → JSON payload building → GenAI‑based PMC summarisation.
 
----
+## Key Features
 
-## 📌 Key Features
-
-- Selective translation (optional)
-- Data cleaning & preprocessing
-- Error message extraction (A#3 extraction + title fallback)
-- SBERT Embedding generation (`all‑MiniLM‑L6‑v2`)
-- DBSCAN clustering with cosine similarity
-- Automatic PMC Candidate creation
-- JSON payload generation per PMC cluster
-- GenAI‑powered PMC summarisation (optional)
-- Logging & metrics at each stage
-- Modular + production‑ready folder structure
-
----
+- Selective translation of non-English incident text
+- Data cleaning and preprocessing
+- Error-message extraction with fallback logic
+- Sentence-BERT embedding generation using `all-MiniLM-L6-v2`
+- Density-based clustering using DBSCAN
+- Rule-based Problem Management Candidate generation
+- Configurable minimum-incident and recurrence-window logic
+- Structured JSON payload generation for each PMC
+- LLM-based structured PMC summarisation
+- Configurable pipeline stages
+- Logging and processing metrics
+- Modular Python implementation
 
 ## 📁 Project Structure
 
