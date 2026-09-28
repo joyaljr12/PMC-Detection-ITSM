@@ -53,7 +53,7 @@ API integrations are intentionally excluded.
 - Logging and processing metrics
 - Modular Python implementation
 
-- ## Pipeline Architecture
+## Pipeline Architecture
 
 ```text
 Raw ITSM Incident Data
@@ -82,9 +82,10 @@ Structured JSON Payload
           ▼
 LLM-Based PMC Summary
 
-## 📁 Project Structure
 
 ```
+## 📁 Project Structure 
+
 ├── config/
 │   └── config.yaml                  # Safe configuration (no API keys)
 │
