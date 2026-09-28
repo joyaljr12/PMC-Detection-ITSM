@@ -25,7 +25,7 @@ payload:
 
 summarisation:
   enabled: true    # Set to true to enable summarisation
-  prompt_file: "Joyal Roy/prompts/pmc_prompt.txt"        # Path to the prompt template file
+  prompt_file: "prompts/pmc_prompt.txt"        # Path to the prompt template file
   client_id: "client ID"      # Your actual client ID
   client_secret: "client secret"   # Your actual client secret
   virtual_key: "virtual key"   # Your actual virtual key
