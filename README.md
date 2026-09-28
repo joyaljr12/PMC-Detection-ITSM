@@ -53,6 +53,35 @@ API integrations are intentionally excluded.
 - Logging and processing metrics
 - Modular Python implementation
 
+- ## Pipeline Architecture
+
+```text
+Raw ITSM Incident Data
+          │
+          ▼
+Selective Translation
+          │
+          ▼
+Data Cleaning & Preprocessing
+          │
+          ▼
+Error-Message Extraction
+          │
+          ▼
+Semantic Embeddings
+          │
+          ▼
+Density-Based Clustering
+          │
+          ▼
+PMC Business Rules
+          │
+          ▼
+Structured JSON Payload
+          │
+          ▼
+LLM-Based PMC Summary
+
 ## 📁 Project Structure
 
 ```
