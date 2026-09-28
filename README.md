@@ -37,13 +37,6 @@ API integrations are intentionally excluded.
 > **Note:** This repository is a sanitized portfolio version of an industry master’s-thesis project completed at CARIAD / Volkswagen Group. Original datasets, credentials, confidential configuration, internal endpoints, and active GenAI API integrations have been removed for confidentiality and security reasons. The repository is intended to demonstrate the pipeline architecture, processing logic, modular design, and engineering approach.
 
 
-# 🚗 AI‑Powered PMC Detection Pipeline
-**Master Thesis – CARIAD / Volkswagen Group**
-
-This repository contains the full implementation of an **AI-driven PMC (Problem Management Candidate) Detection Pipeline**, built for analysing incident tickets and automatically identifying recurring problems across Volkswagen Group systems.
-
-It is the end‑to‑end solution developed as part of my **Master Thesis**, combining:  
-data cleaning → error message extraction → embeddings → clustering → PMC creation → JSON payload building → GenAI‑based PMC summarisation.
 
 ## Key Features
 
