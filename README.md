@@ -458,19 +458,6 @@ This project demonstrates hands-on experience with:
 
 ---
 
-## 👤 Author
-
-**Joyal Roy**  
-AI / Machine Learning Engineer
-
-- GitHub: [github.com/joyaljr12](https://github.com/joyaljr12)
-- LinkedIn: [linkedin.com/in/joyalcroy](https://www.linkedin.com/in/joyalcroy/)
-
-```
-
-
-
-
 
 
 
