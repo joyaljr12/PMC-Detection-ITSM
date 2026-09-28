@@ -104,7 +104,47 @@ the Problem Management workflow.
 
 The public implementation focuses on the selected pipeline configuration rather
 than reproducing every experiment performed during the thesis.
+
+## PMC Candidate Logic
+
+Clustering alone was not treated as sufficient evidence that incidents belonged
+to the same recurring problem.
+
+The final PMC logic combines semantic similarity with organisation-specific
+conditions including:
+
+- matching category and function
+- matching vehicle software generation
+- a minimum of five related incidents
+- recurrence within a 21-day window
+
+This separates semantic grouping from the business rules used to determine
+whether a cluster should become a Problem Management Candidate.
+
+## Generative AI Summarisation
+
+After PMC candidates are identified, the relevant incident information is
+converted into a structured JSON payload for summarisation.
+
+The summarisation workflow was developed iteratively:
+
+1. Structured prompts were designed around the information required for Problem
+   Management documentation.
+2. Prompt versions were first prototyped and evaluated using Microsoft Copilot.
+3. Once the prompt design was stable, the workflow was integrated with the
+   company's LLM API in the original project environment.
+4. Additional input cleaning removed irrelevant ticket content to reduce token
+   usage and improve the relevance of the supplied context.
+5. Four GPT models were compared for factors including format adherence and
+   preservation of relevant source information.
+6. GPT-4.1-mini was selected for the final workflow.
+
+The active company LLM integration, credentials, and internal endpoints are not
+included in this public repository.
+
+
 ```
+
 ## 📁 Project Structure 
 
 ├── config/
