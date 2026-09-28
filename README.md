@@ -81,20 +81,7 @@ Structured JSON Payload
           │
           ▼
 LLM-Based PMC Summary
-
-
-
-Later you can make this prettier with Mermaid, but even this version already helps.
-
-## Very important: show your experimentation
-
-At the moment, someone looking at your repository might assume:
-
-> “He used MiniLM + DBSCAN.”
-
-That hides a large part of what you actually did.
-
-Add:
+```
 
 ```markdown
 ## Experimentation & Model Selection
@@ -117,22 +104,6 @@ the Problem Management workflow.
 
 The public implementation focuses on the selected pipeline configuration rather
 than reproducing every experiment performed during the thesis.
-
-## PMC Candidate Logic
-
-Clustering alone was not treated as sufficient evidence that incidents belonged
-to the same recurring problem.
-
-The final PMC logic combines semantic similarity with organisation-specific
-conditions including:
-
-- matching category and function
-- matching vehicle software generation
-- a minimum of five related incidents
-- recurrence within a 21-day window
-
-This separates semantic grouping from the business rules used to determine
-whether a cluster should become a Problem Management Candidate.
 ```
 ## 📁 Project Structure 
 
